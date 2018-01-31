@@ -1,0 +1,109 @@
+<link rel="stylesheet" href="source/plugin/chinabank/extend_module.css">
+
+	<div class='bbscoin-wrap'>
+		<ul class="mtm bbda cl">
+			<li style="line-height:36px;"><em> {lang bbscoin:pay_lang_1}: </em>{lang bbscoin:pay_lang_2} <!--{$config[pay_ratio]}--> </li>
+		</ul>
+
+	  <form id="addfundsform" name="addfundsform" method="post" target="_blank" autocomplete="off" action="">
+				<input type="hidden" name="formhash" value="{FORMHASH}" />
+				<input type="hidden" name="addfundssubmit" value="true" />
+				<input type="hidden" name="handlekey" value="buycredit" />
+				<table cellspacing="0" cellpadding="0" class="tfm mtn">
+					<tr id="paybox">
+						<th>{lang bbscoin:pay_lang_4}</th>
+						<td class="pns">
+							<input type="text" size="5" class="px" style="width: auto;" id="addfundamount" name="addfundamount" value="0" onkeyup="addcalcredit()" />
+							&nbsp;{$_G[setting][extcredits][$config[pay_credit]][title]} 
+							&nbsp;{lang bbscoin:pay_lang_5} <span id="desamount">0</span> {lang bbscoin:pay_lang_6}
+						</td>
+						<td  class="d">
+					
+						</td>
+					</tr>
+					<tr id="paybox">
+						<th></th>
+						<td class="pns">
+						    {lang bbscoin:pay_lang_12}<br /><!--{$config[bbscoin_wallet_address]}--> <br/>
+						</td>
+						<td  class="d">
+							
+						</td>
+					</tr>
+					<tr id="paybox">
+						<th>{lang bbscoin:pay_lang_13}</th>
+						<td class="pns">
+							<input type="text" size="100" class="px" style="width: auto;" id="transactionhash" name="transactionhash" value="" />
+						</td>
+						<td  class="d">
+							
+						</td>
+					</tr>
+					<tr>
+						<th>&nbsp;</th>
+						<td colspan="2">
+							<button type="submit" name="addfundssubmit_btn" class="pn" id="addfundssubmit_btn" value="true"><em>{lang bbscoin:pay_lang_7}</em></button>
+						</td>
+					</tr>
+				</table>
+		</form>
+
+<!--{if $config[pay_to_bbscoin]}-->
+		<ul class="mtm bbda cl">
+			<li style="line-height:36px;"><em> {lang bbscoin:pay_lang_1}: </em>{lang bbscoin:pay_lang_11} <!--{$config[pay_to_coin_ratio]}--> </li>
+		</ul>
+
+	  <form id="addcoinsform" name="addcoinsform" method="post" target="_blank" autocomplete="off" action="">
+				<input type="hidden" name="formhash" value="{FORMHASH}" />
+				<input type="hidden" name="addcoinssubmit" value="true" />
+				<input type="hidden" name="handlekey" value="buycoin" />
+				<table cellspacing="0" cellpadding="0" class="tfm mtn">
+					<tr id="paybox">
+						<th>{lang bbscoin:pay_lang_8}</th>
+						<td class="pns">
+							<input type="text" size="5" class="px" style="width: auto;" id="addcoinamount" name="addcoinamount" value="0" onkeyup="addcalcoin()" />
+							&nbsp;{lang bbscoin:pay_lang_6}
+							&nbsp;{lang bbscoin:pay_lang_9} <span id="coin_desamount">0</span> {$_G[setting][extcredits][$config[pay_credit]][title]} 
+						</td>
+						<td  class="d">
+					
+						</td>
+					</tr>
+					<tr id="paybox">
+						<th>{lang bbscoin:pay_lang_14}</th>
+						<td class="pns">
+							<input type="text" size="100" class="px" style="width: auto;" id="walletaddress" name="walletaddress" value="" />
+						</td>
+						<td  class="d">
+							
+						</td>
+					</tr>
+
+					<tr>
+						<th>&nbsp;</th>
+						<td colspan="2">
+							<button type="submit" name="addfundssubmit_btn" class="pn" id="addfundssubmit_btn" value="true"><em>{lang bbscoin:pay_lang_10}</em></button>
+						</td>
+					</tr>
+				</table>
+		</form>
+<!--{/if}-->
+
+		<span style="display: none" id="return_addfundsform"></span>
+<script type="text/javascript">
+function addcalcredit() {
+var addfundamount = $('addfundamount').value.replace(/^0/, '');
+var addfundamount = parseInt(addfundamount);
+$('desamount').innerHTML = !isNaN(addfundamount) ? Math.ceil(((addfundamount / <!--{$config[pay_ratio]}-->) * 100)) / 100 : 0;
+}
+
+function addcalcoin() {
+var addcoinamount = $('addcoinamount').value.replace(/^0/, '');
+var addcoinamount = parseInt(addcoinamount);
+$('coin_desamount').innerHTML = !isNaN(addcoinamount) ? Math.ceil(((addcoinamount / <!--{$config[pay_to_coin_ratio]}-->) * 100)) / 100 : 0;
+}
+
+</script>
+
+	</div>
+

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X2.5,X3.0,X3.1,X3.2,X3.3,X3.4]]></item>
+	<item id="Time"><![CDATA[2018-01-21 19:02]]></item>
+	<item id="From"><![CDATA[BBSCoin (http://bbs.bbscoin.xyz/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[BBSCoin]]></item>
+			<item id="identifier"><![CDATA[bbscoin]]></item>
+			<item id="description"><![CDATA[BBSCoin 积分互兑]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[bbscoin/]]></item>
+			<item id="copyright"><![CDATA[BBSCoin]]></item>
+			<item id="version"><![CDATA[1.0.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[admincp]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[订单管理]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[bbscoin]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[BBSCoin兑换]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[19]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X2.5,X3.0,X3.1,X3.2,X3.3,X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[交易积分]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[pay_credit]]></item>
+				<item id="type"><![CDATA[extcredit]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[BBSCoin/积分兑换比率]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[pay_ratio]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0.1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[是否允许积分换BBSCoin]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[pay_to_bbscoin]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[积分/BBSCoin兑换比率]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[pay_to_coin_ratio]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[10]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[站长钱包地址]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[bbscoin_wallet_address]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[Walletd 服务地址]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[bbscoin_walletd]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[http://127.0.0.1:8070/json_rpc]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="pay_lang_s1"><![CDATA[每次操作涉及的交易积分的不能少于：]]></item>
+				<item id="pay_lang_s2"><![CDATA[充值金额错误]]></item>
+				<item id="pay_lang_s3"><![CDATA[交易已处理，请勿重复操作]]></item>
+				<item id="pay_lang_s4"><![CDATA[请勿频繁操作]]></item>
+				<item id="pay_lang_s5"><![CDATA[提现操作失败]]></item>
+				<item id="pay_lang_s6"><![CDATA[提现操作成功，订单号和交易号：]]></item>
+				<item id="pay_lang_s7"><![CDATA[提现操作成功]]></item>
+				<item id="pay_lang_s8"><![CDATA[充值操作成功，订单号：]]></item>
+				<item id="pay_lang_s9"><![CDATA[充值操作成功]]></item>
+				<item id="pay_lang_s10"><![CDATA[积分不足，不能提现]]></item>
+				<item id="pay_lang_s11"><![CDATA[站长未设置钱包地址]]></item>
+				<item id="pay_lang_s12"><![CDATA[扣除手续费后提现BBSCoin小于0，无法继续]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="pay_lang_1"><![CDATA[说明]]></item>
+				<item id="pay_lang_2"><![CDATA[BBSCoin 支付，BBSCoin/积分兑换比例为 1：]]></item>
+				<item id="pay_lang_3"><![CDATA[支付方式]]></item>
+				<item id="pay_lang_4"><![CDATA[充值]]></item>
+				<item id="pay_lang_5"><![CDATA[所需 BBSCoin]]></item>
+				<item id="pay_lang_6"><![CDATA[BBS]]></item>
+				<item id="pay_lang_7"><![CDATA[我要充值]]></item>
+				<item id="pay_lang_8"><![CDATA[提币]]></item>
+				<item id="pay_lang_9"><![CDATA[所需]]></item>
+				<item id="pay_lang_10"><![CDATA[我要提币]]></item>
+				<item id="pay_lang_11"><![CDATA[BBSCoin 提币，站点钱包内 BBSCoin 不够时可能会失败。交易手续费由您支付。积分/BBSCoin兑换比例为 1：]]></item>
+				<item id="pay_lang_12"><![CDATA[请先将BBSCoin打入下述钱包地址，然后将交易ID (TransactionHash) 填写后，再点击充值]]></item>
+				<item id="pay_lang_13"><![CDATA[交易ID]]></item>
+				<item id="pay_lang_14"><![CDATA[提现钱包地址]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+	</item>
+</root>
