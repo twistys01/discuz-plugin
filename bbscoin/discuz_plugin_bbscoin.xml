@@ -14,7 +14,7 @@
 			<item id="datatables"><![CDATA[]]></item>
 			<item id="directory"><![CDATA[bbscoin/]]></item>
 			<item id="copyright"><![CDATA[BBSCoin]]></item>
-			<item id="version"><![CDATA[1.0.0]]></item>
+			<item id="version"><![CDATA[1.1.0]]></item>
 			<item id="__modules">
 				<item id="0">
 					<item id="name"><![CDATA[admincp]]></item>
@@ -100,6 +100,15 @@
 				<item id="value"><![CDATA[http://127.0.0.1:8070/json_rpc]]></item>
 				<item id="extra"><![CDATA[]]></item>
 			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[充值所需区块确认数]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[confirmed_blocks]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[3]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
 		</item>
 		<item id="language">
 			<item id="scriptlang">
@@ -115,6 +124,7 @@
 				<item id="pay_lang_s10"><![CDATA[积分不足，不能提现]]></item>
 				<item id="pay_lang_s11"><![CDATA[站长未设置钱包地址]]></item>
 				<item id="pay_lang_s12"><![CDATA[扣除手续费后提现BBSCoin小于0，无法继续]]></item>
+				<item id="pay_lang_s13"><![CDATA[交易未达到所需确认数，请稍后再试。所需确认数为 ]]></item>
 			</item>
 			<item id="templatelang">
 				<item id="pay_lang_1"><![CDATA[说明]]></item>

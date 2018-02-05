@@ -71,6 +71,22 @@ if(submitcheck('addfundssubmit')){
     $result = getUrlContent($config['bbscoin_walletd'], json_encode($req_data)); 
     $rsp_data = json_decode($result, true);
 
+    $status_req_data = array(
+      "jsonrpc" => "2.0",
+      "method" => "getStatus"
+    );
+
+    $result = getUrlContent($config['bbscoin_walletd'], json_encode($status_req_data)); 
+    $status_rsp_data = json_decode($result, true);
+
+    $blockCount = $status_rsp_data['result']['blockCount'];
+    $transactionBlockIndex = $rsp_data['result']['transaction']['blockIndex'];
+    $confirmed = $blockCount - $transactionBlockIndex + 1;
+    if ($blockCount <= 0 || $transactionBlockIndex <= 0 || $confirmed <= $config['confirmed_blocks']) {
+        discuz_process::unlock('pay_bbscoin_'.$_G['uid']);
+    	showmessage(lang('plugin/bbscoin', 'pay_lang_s13').$config['confirmed_blocks'], '', array(), array('showdialog' => 1, 'showmsg' => true, 'closetime' => true));
+    }
+
     $trans_amount = 0;
     if ($rsp_data['result']['transaction']['transfers']) {
         foreach ($rsp_data['result']['transaction']['transfers'] as $transfer_item) {
