@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <root>
 	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
-	<item id="Version"><![CDATA[X2.5,X3.0,X3.1,X3.2,X3.3,X3.4]]></item>
+	<item id="Version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0,L1.0]]></item>
 	<item id="Time"><![CDATA[2018-01-21 19:02]]></item>
-	<item id="From"><![CDATA[BBSCoin (http://bbs.bbscoin.xyz/)]]></item>
+	<item id="From"><![CDATA[BBSCoin (https://bbscoin.xyz/)]]></item>
 	<item id="Data">
 		<item id="plugin">
 			<item id="available"><![CDATA[1]]></item>
@@ -44,7 +44,7 @@
 				</item>
 			</item>
 		</item>
-		<item id="version"><![CDATA[X2.5,X3.0,X3.1,X3.2,X3.3,X3.4]]></item>
+		<item id="version"><![CDATA[X2.5,X3,X3.1,X3.2,X3.3,X3.4,F1.0,L1.0]]></item>
 		<item id="var">
 			<item id="0">
 				<item id="displayorder"><![CDATA[0]]></item>
