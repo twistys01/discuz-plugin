@@ -1,0 +1,1 @@
+# BBSCoin Plugin for Discuz!
