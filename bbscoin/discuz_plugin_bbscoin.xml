@@ -141,6 +141,7 @@
 				<item id="pay_lang_12"><![CDATA[请先将BBSCoin打入下述钱包地址，然后将交易ID (TransactionHash) 填写后，再点击充值]]></item>
 				<item id="pay_lang_13"><![CDATA[交易ID]]></item>
 				<item id="pay_lang_14"><![CDATA[提现钱包地址]]></item>
+				<item id="pay_lang_15"><![CDATA[什么是BBSCoin积分？<a href="https://docs.bbscoin.xyz" target="_blank">查看文档</a>]]></item>
 			</item>
 		</item>
 		<item id="installfile"><![CDATA[install.php]]></item>
